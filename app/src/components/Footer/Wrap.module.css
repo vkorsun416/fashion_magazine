@@ -1,0 +1,30 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.black {
+    background-color: black;
+}
+
+.item {
+    color: rgba(1, 1, 1, 0.37);
+}
+
+.white {
+    color: #FFFFFF;
+    opacity: 37%;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .item {
+        margin: 0 auto;
+    }
+}

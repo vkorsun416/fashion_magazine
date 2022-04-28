@@ -1,0 +1,43 @@
+.brand {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 72px;
+    font-weight: 400;
+    margin: 20px 0;
+    padding-left: 22px;
+    position: relative;
+}
+
+.title::before {
+    content: "(1)";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    font-size: 16px;
+}
+
+.text {
+    margin: 0;
+    padding: 0 0 0 22px;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+@media screen and (max-width: 980px) {
+    .title {
+        font-size: 60px;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 382px) {
+  .title {
+        font-size: 54px;
+    }
+}

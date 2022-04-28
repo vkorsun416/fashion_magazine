@@ -1,0 +1,123 @@
+.menu {
+    position: fixed;
+    height: 100vh;
+    background-color: #777B60;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.enter {
+    transform: translateX(100%);
+    transition: all 800ms ease-in-out;
+}
+
+.enter.active {
+    transform: translateX(0);
+}
+
+.enter .header {
+    transform: translateX(30%);
+    transition: all 600ms 400ms ease-in-out;
+}
+
+.enter.active .header {
+    transform: translateX(0);
+}
+
+.enter .list {
+    transform: translateX(50%);
+    transition: all 600ms 500ms ease-in-out;
+}
+
+.enter.active .list {
+    transform: translateX(0);
+}
+
+.enter .footer {
+    transform: translateX(50%);
+    transition: all 800ms 500ms ease-in-out;
+}
+
+.enter.active .footer {
+    transform: translateX(0);
+}
+
+.exit {
+    transform: translateX(0);
+    transition: all 700ms 600ms ease-in-out;
+}
+
+.exit.active {
+    transform: translateX(100%);
+}
+
+.exit .header {
+    transform: translateX(0);
+    transition: all 600ms 700ms ease-in-out;
+}
+
+.exit.active .header {
+    transform: translateX(30%);
+}
+
+.exit .list {
+    transform: translateX(0);
+    transition: all 600ms 200ms ease-out;
+}
+
+.exit.active .list {
+    transform: translateX(-5%);
+}
+
+.exit .footer {
+    transform: translateX(0);
+    transition: all 600ms 500ms ease-in-out;
+}
+
+.exit.active .footer {
+    transform: translateX(30%);
+    transition: all 900ms ease-in-out;
+}
+
+@media screen and (max-width: 1024px){
+    .enter {
+        transition: all 800ms ease;
+    }
+
+    .enter .header {
+        transition: all 500ms 200ms ease-in-out;
+    }
+
+    .exit {
+        transition: all 700ms 400ms ease;
+    }
+
+    .exit .header {
+        transition: all 800ms ease-in-out;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .enter {
+        transition: all 500ms ease;
+    }
+
+    .enter .header {
+        transition: all 400ms 200ms ease-in-out;
+    }
+
+    .exit {
+        transition: all 600ms 200ms ease;
+    }
+
+    .exit .header {
+        transition: all 600ms ease-in-out;
+    }
+}

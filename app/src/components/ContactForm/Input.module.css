@@ -1,0 +1,108 @@
+.input {
+    max-width: 1180px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    font-family: "SF Pro Display", serif;
+    font-size: 72px;
+    font-weight: 500;
+    color: #777B60;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 20px;
+    z-index: 5;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active
+{
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.label {
+    position: absolute;
+    left: 50%;
+    margin-left: -590px;
+    top: 0;
+    font-family: "SF Pro Display", serif;
+    font-weight: 500;
+    font-size: 72px;
+    color: #000;
+    transition: all 0.2s ease;
+    z-index: -20;
+}
+
+.input:focus+.label,
+.input:valid+.label,
+.input:invalid+.label
+{
+    color: #777B60;
+    transform: translateY(-13px);
+    font-size: 30px;
+}
+
+.input[value=""]+.label {
+    color: #000;
+    transform: translateY(0);
+    font-size: 72px;
+}
+
+.input:focus:required:invalid,
+.input:required:invalid {
+    color: #ec7053;
+}
+
+.number {
+    position: absolute;
+    top: 13px;
+    left: -25px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1600px) {
+    .label,
+    .input[value=""]+.label  {
+        left: 20px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .outer {
+        padding: 16px 90px;
+    }
+    .label {
+        font-size: 48px;
+        top: -10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .input {
+        padding: 25px 0;
+        font-size: 40px;
+    }
+    .label {
+        font-size: 24px;
+        top: -2px;
+    }
+
+    .input:focus+.label,
+    .input:valid+.label,
+    .input:invalid+.label
+    {
+        color: #777B60;
+        transform: translateY(0);
+        font-size: 24px;
+    }
+
+    .input[value=""]+.label {
+        font-size: 48px;
+        top: 25px;
+        color: #000;
+    }
+
+}

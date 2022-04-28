@@ -1,0 +1,142 @@
+.section {
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    padding: 135px 0 114px 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+            "zzz ph"
+            "txt ph";
+}
+
+.arrow {
+    font-size: inherit;
+    grid-area: arrow;
+    margin: 30px 0 0 80px;
+    font-weight: 500;
+}
+
+.wrap {
+    font-size: inherit;
+    grid-area: txt;
+    text-align: right;
+    padding-right: 3em;
+}
+
+.num {
+    grid-area: zzz;
+    margin: 0;
+    text-align: right;
+    padding-right: 3em;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.text {
+    line-height: 17px;
+    font-size: 14px;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    grid-area: ph;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.link::after {
+    content: "⟶";
+    margin-left: 17px;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 1340px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20% 80%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .grid {
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 5% 95%;
+    }
+
+    .img {
+        align-self: center;
+    }
+
+    .container {
+        padding: 80px 0 80px 100px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .grid {
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "ph"
+            "txt";
+    }
+
+    .wrap {
+        padding: 0;
+    }
+
+    .img {
+        width: 100vw;
+        justify-self: end;
+    }
+
+    .container {
+        padding: 70px;
+    }
+
+    .text {
+        padding: 1em 0 0 100px;
+    }
+
+    .num {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text {
+        padding: 0;
+    }
+
+    .container {
+        padding: 2em;
+    }
+}
+

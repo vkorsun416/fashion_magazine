@@ -1,0 +1,46 @@
+.outer {
+    background-color: #000000;
+    padding: 20px 180px;
+    margin: 132px 0 0 0;
+    position: relative;
+    transition: all 1.5s ease-out;
+}
+
+.inner {
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    max-width: 1233px;
+    position: relative;
+}
+
+.outer:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:  #777B60;
+    transition: all 1s ease-out;
+}
+
+.outer:hover:before {
+    right: auto;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 730px) {
+    .outer {
+        padding: 45px 90px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .outer {
+        padding: 24px 40px;
+        margin: 0;
+    }
+}

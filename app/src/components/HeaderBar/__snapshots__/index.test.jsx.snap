@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header bar Should render to string 1`] = `"<header><div class=\\"rgba\\"><div class=\\"container\\"><div class=\\"header\\"><div class=\\"text \\">INTERVIEW</div><div class=\\"btn \\"><div class=\\"item \\"></div></div></div></div></div></header>"`;
+
+exports[`Header bar Should render with theme 1`] = `"<header><div class=\\"rgba\\"><div class=\\"container\\"><div class=\\"header\\"><div class=\\"text light\\">INTERVIEW</div><div class=\\"btn dark\\"><div class=\\"item dark\\"></div></div></div></div></div></header>"`;
+
+exports[`Main link Should render on main 1`] = `"<div class=\\"text \\">INTERVIEW</div>"`;
+
+exports[`Main link Should render other page 1`] = `"<a class=\\"link\\" href=\\"/\\"><div class=\\"texts \\">INTERVIEW</div></a>"`;

@@ -1,0 +1,64 @@
+.btn {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 21px;
+    cursor: pointer;
+    padding: 24px;
+    right: 0;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.item {
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.btn::before, .btn::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.btn.dark::before, .btn.dark::after {
+    background-color: #000;
+}
+
+.btn::before {
+    top: 24px;
+}
+
+.btn::after {
+    bottom: 24px;
+}
+
+.item {
+
+}
+
+.item.dark {
+    background-color: #000;
+}
+
+.btn.active .item,
+.btn.active::before,
+.btn.active::after {
+    background-color: #000;
+    opacity: 1;
+}
+
+.btn.active .item {
+    opacity: 0;
+}
+
+.btn.active::before {
+    transform: translateY(10px) rotate(-45deg);
+}
+
+.btn.active::after {
+    transform: translateY(-7px) rotate(45deg);
+}

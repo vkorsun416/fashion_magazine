@@ -1,0 +1,17 @@
+.button {
+    background-color: transparent;
+    color: white;
+    font-family: "SF Pro Display", serif;
+    font-weight: 500;
+    font-size: 72px;
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 530px) {
+    .button {
+        font-size: 48px;
+        margin: 0 auto;
+    }
+}

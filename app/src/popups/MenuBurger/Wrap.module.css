@@ -1,0 +1,19 @@
+.section {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+}
+
+.container {
+    padding: 0;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

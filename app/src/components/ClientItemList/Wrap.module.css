@@ -1,0 +1,11 @@
+.wrap {
+    padding-top: 200px;
+    background-color: #000;
+    border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width: 661px) {
+    .wrap {
+        padding-top: 150px;
+    }
+}

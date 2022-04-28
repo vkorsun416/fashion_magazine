@@ -1,0 +1,24 @@
+
+.title {
+    display: block;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 50px 180px;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+@media screen and (max-width: 730px) {
+    .title {
+        padding: 50px 90px;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+    .title {
+        padding: 50px 40px;
+        text-align: center;
+        font-size: 36px;
+    }
+}

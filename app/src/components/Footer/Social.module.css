@@ -1,0 +1,44 @@
+.wrap {
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    margin-right: 15px;
+    border-bottom: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.link:last-child {
+    padding: 0;
+}
+
+.light {
+    color: #fff;
+}
+
+.white {
+    color: white;
+    border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width: 850px) {
+    .item {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .wrap {
+        margin: 0 auto 15px auto;
+    }
+}

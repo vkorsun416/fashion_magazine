@@ -1,0 +1,92 @@
+.container {
+    padding: 50px 0 120px 0;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.gridWrap {
+    display: grid;
+    grid-template-columns: 33% 20% 14% 33%;
+    grid-template-areas:
+            "aaa bbb bbb ..."
+            "aaa arrow arrow ..."
+            "aaa ... ccc ccc"
+            "... ... ccc ccc";
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        padding: 50px 0 100px 0;
+    }
+
+    .gridWrap {
+        grid-template-columns: 33% 20% 20% 27%;
+    }
+}
+
+@media screen and (max-width: 1008px) {
+    .container {
+        padding: 50px 0 75px 0;
+    }
+
+    .gridWrap {
+        grid-template-columns: 33% 28% 16% 23%;
+    }
+}
+
+@media screen and (max-width: 914px) {
+    .container {
+        padding: 50px 0 50px 0;
+    }
+
+    .gridWrap {
+        grid-template-columns: 33% 28% 20% 19%;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .gridWrap {
+        grid-template-columns: 40% 20% 38%;
+        grid-template-areas:
+            "aaa bbb bbb ..."
+            "aaa ... ... ..."
+            "aaa ... ccc ccc"
+            "arrow arrow ccc ccc";
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .gridWrap {
+        grid-template-columns: 40% 40% 20%;
+        grid-template-areas:
+        "aaa aaa ..."
+        "bbb bbb ..."
+        "arrow ccc ccc";
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gridWrap {
+        grid-template-columns: 40% 50% 10%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .gridWrap {
+        grid-template-columns: 40% 50% 10%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .gridWrap {
+        grid-template-columns: 30% 60% 10%;
+        grid-template-areas:
+        "aaa aaa ..."
+        "bbb bbb ..."
+        "... ccc ccc"
+        "... arrow ...";
+    }
+}

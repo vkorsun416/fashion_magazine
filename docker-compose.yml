@@ -1,0 +1,79 @@
+version: "2.2"
+
+services:
+  mongo:
+    image: mongo:4.4.9
+    container_name: fsr-mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: form
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data/mongo:/data/db
+      - ./init:/docker-entrypoint-initdb.d
+
+  client:
+    image: wi4er/groot:0.3.3
+    environment:
+      DB_HOST: mongo
+      DB_USER: root
+      DB_PASSWORD: example
+      DB_NAME: client
+    links:
+      - mongo
+    ports:
+      - "8081:8080"
+
+  project:
+    image: wi4er/groot:0.3.3
+    environment:
+      DB_HOST: mongo
+      DB_USER: root
+      DB_PASSWORD: example
+      DB_NAME: project
+    links:
+      - mongo
+    ports:
+      - "8082:8080"
+
+  service:
+    image: wi4er/groot:0.3.3
+    environment:
+      DB_HOST: mongo
+      DB_USER: content
+      DB_PASSWORD: example
+      DB_NAME: service
+    links:
+      - mongo
+    ports:
+      - "8083:8080"
+
+  form:
+    image: wi4er/doppelganger:0.2.1
+    environment:
+      DB_HOST: mongo
+      DB_USER: form
+      DB_PASSWORD: example
+      DB_NAME: form
+    links:
+      - mongo
+    ports:
+      - "8084:8080"
+
+  public:
+    image: node:latest
+    working_dir: /app
+    command: npm start
+    links:
+      - client
+      - project
+      - form
+    ports:
+      - "80:8080"
+    volumes:
+      - ./public:/app
+      - ./admin:/app/admin
+      - ./app/build:/app/public
+

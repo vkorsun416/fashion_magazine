@@ -1,0 +1,41 @@
+.link {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.text,
+.texts {
+    position: relative;
+    font-size: 18px;
+    z-index: 2;
+    width: 92px;
+    height: 12px;
+    color: #fff;
+    padding: 24px;
+    left: 0;
+}
+
+.texts:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: all 0.4s ease-out;
+}
+
+.texts:hover:before {
+    right: auto;
+    width: 100%;
+}
+
+.light {
+    color: #000;
+}
+
+.light:before {
+    background-color: #000;
+}

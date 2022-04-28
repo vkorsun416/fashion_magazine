@@ -1,0 +1,22 @@
+.link {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.text {
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+    width: 92px;
+    height: 12px;
+    color: #000;
+    padding: 24px;
+    left: 0;
+    transition: 100ms ease-in-out;
+}
+
+.text:hover {
+    color: #fff;
+    transition: 200ms ease-in-out;
+}
+

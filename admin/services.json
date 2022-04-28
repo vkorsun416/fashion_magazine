@@ -1,0 +1,26 @@
+[
+  {
+    "type": "groot",
+    "url": "/api/client/",
+    "path": "/client",
+    "name": "Клиенты"
+  },
+  {
+    "type": "groot",
+    "url": "/api/project/",
+    "path": "/project",
+    "name": "Проекты"
+  },
+  {
+    "type": "groot",
+    "url": "/api/service/",
+    "path": "/service",
+    "name": "Сервисы"
+  },
+  {
+    "type": "doppelganger",
+    "url": "/api/form",
+    "path": "/forms",
+    "name": "FORMS"
+  }
+]

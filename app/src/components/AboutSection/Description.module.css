@@ -1,0 +1,45 @@
+.index {
+    grid-area: bbb;
+    margin-left: 80px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.text {
+    font-size: 14px;
+    margin: 1em 0;
+}
+
+@media screen and (max-width: 1100px) {
+    .text {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 914px) {
+    .index {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .index {
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .text {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .index {
+        margin-right: 0;
+    }
+}

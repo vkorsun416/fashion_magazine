@@ -1,0 +1,37 @@
+
+.index {
+    grid-area: bbb;
+    margin-left: 80px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.text {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 914px) {
+    .index {
+        margin: 50px;
+    }
+
+    .title {
+        font-size: 36px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+ .text {
+     margin: 14px 0;
+ }
+}
+
+@media screen and (max-width: 470px) {
+    .text {
+        margin-right: 0;
+    }
+}

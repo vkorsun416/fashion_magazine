@@ -1,0 +1,41 @@
+.pale {
+    padding: 0 0 50px 50px;
+    grid-column-start: -3;
+}
+
+.column {
+    grid-column-start: -2;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.text {
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 980px) {
+    .pale {
+        padding: 0;
+        margin: 30px 30px 0 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .pale {
+        padding-right: 20px;
+        grid-column-start: 1;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .pale {
+        padding: 0;
+        margin: 30px 0 0 0;
+    }
+}

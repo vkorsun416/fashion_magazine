@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/admin/static/css/main.85de5443.chunk.css",
+    "main.js": "/admin/static/js/main.0eacf551.chunk.js",
+    "main.js.map": "/admin/static/js/main.0eacf551.chunk.js.map",
+    "runtime-main.js": "/admin/static/js/runtime-main.47484b91.js",
+    "runtime-main.js.map": "/admin/static/js/runtime-main.47484b91.js.map",
+    "static/css/2.1881a404.chunk.css": "/admin/static/css/2.1881a404.chunk.css",
+    "static/js/2.8faf8d61.chunk.js": "/admin/static/js/2.8faf8d61.chunk.js",
+    "static/js/2.8faf8d61.chunk.js.map": "/admin/static/js/2.8faf8d61.chunk.js.map",
+    "index.html": "/admin/index.html",
+    "static/css/2.1881a404.chunk.css.map": "/admin/static/css/2.1881a404.chunk.css.map",
+    "static/css/main.85de5443.chunk.css.map": "/admin/static/css/main.85de5443.chunk.css.map",
+    "static/js/2.8faf8d61.chunk.js.LICENSE.txt": "/admin/static/js/2.8faf8d61.chunk.js.LICENSE.txt",
+    "static/media/marc.e8607287.jpg": "/admin/static/media/marc.e8607287.jpg",
+    "static/media/sidebar-1.0a127c58.jpg": "/admin/static/media/sidebar-1.0a127c58.jpg",
+    "static/media/sidebar-2.22f68ba5.jpg": "/admin/static/media/sidebar-2.22f68ba5.jpg",
+    "static/media/sidebar-3.e667b13e.jpg": "/admin/static/media/sidebar-3.e667b13e.jpg",
+    "static/media/sidebar-4.dd4b5581.jpg": "/admin/static/media/sidebar-4.dd4b5581.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47484b91.js",
+    "static/css/2.1881a404.chunk.css",
+    "static/js/2.8faf8d61.chunk.js",
+    "static/css/main.85de5443.chunk.css",
+    "static/js/main.0eacf551.chunk.js"
+  ]
+}

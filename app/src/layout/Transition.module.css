@@ -1,0 +1,50 @@
+body {
+    font-family: "SF Pro Display", serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.layout {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("../fonts/SFPRODISPLAYREGULAR.OTF");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("../fonts/SFPRODISPLAYMEDIUM.OTF");
+    font-weight: 500;
+    font-style: normal;
+}
+
+.enter {
+    height: 0;
+    overflow: hidden;
+    transform: translateX(-10%) scaleX(1.2);
+    transition:
+            opacity 500ms 500ms ease-in-out,
+            transform 500ms 500ms ease-in-out,
+            height 0ms 500ms;
+    opacity: 0;
+}
+
+.enter.active {
+    height: 100%;
+    transform: translateX(0) scaleX(1);
+    opacity: 1;
+}
+
+.exit {
+    transition: all 500ms ease-in;
+    opacity: 1;
+}
+
+.exit.active {
+    opacity: 0;
+}

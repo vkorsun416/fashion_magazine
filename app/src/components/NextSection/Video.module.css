@@ -1,0 +1,82 @@
+.image {
+    width: 100%;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 200px 0;
+}
+
+.link {
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.item {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    padding: 0 10px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    transition: 100ms ease;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.item:hover {
+    opacity: 50%;
+    transition: 150ms ease-in-out;
+}
+
+.after::after {
+    content: " / ";
+    position: absolute;
+    right: 0;
+}
+
+.wrap {
+    position: relative;
+}
+
+.video {
+    width: 100%;
+    transition: 100ms ease-in-out;
+}
+
+.video:hover {
+    opacity: 50%;
+    transition: 250ms ease-in-out;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -50px;
+    color: #fff;
+    font-size: 72px;
+    text-transform: uppercase;
+    transition: 250ms ease-in-out;
+    opacity: 0;
+}
+
+.video:hover + .title {
+    opacity: 100%;
+    transition: 50ms 250ms ease-in-out;
+}
+
+.full {
+    transition: 100ms ease-in-out;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    margin-top: 100px;
+    left: 50%;
+}

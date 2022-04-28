@@ -1,0 +1,115 @@
+.section {
+    background-color: black;
+    padding: 320px 0 80px 0;
+    margin-top: -380px;
+}
+
+.container {
+    padding: 24px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    color: #fff;
+    grid-template-columns: 28% 36% 36%;
+    padding: 0 130px;
+    grid-template-areas:
+            "img img img"
+            "serv ... ...";
+}
+
+.image {
+    grid-area: img;
+    justify-self: center;
+    margin-bottom: 10em;
+    width: 100%;
+}
+
+.name {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 36px;
+    grid-area: serv;
+}
+
+@media screen and (max-width: 1470px) {
+    .grid {
+        padding: 0 80px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .section {
+        margin-top: -350px;
+    }
+
+    .grid {
+        grid-template-columns: 20% 40% 40%;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .section {
+        margin-top: -300px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .section {
+        margin-top: -250px;
+        padding: 250px 0 80px 0;
+    }
+
+    .grid {
+        grid-template-columns: 48% 48%;
+        grid-template-areas:
+            "img img"
+            "serv ..."
+            ;
+        grid-column-gap: 4%;
+    }
+
+    .image {
+        margin: 0;
+    }
+
+    .name {
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .section {
+        padding: 220px 0 80px 0;
+    }
+
+    .image {
+        width: 100vw;
+    }
+
+    .grid {
+        grid-template-columns: 47% 47%;
+        grid-column-gap: 6%;
+        padding: 0 26px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .section {
+        margin-top: -200px;
+        padding: 180px 0 80px 0;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+        padding: 0 6px;
+        grid-template-areas:
+            "img"
+            "serv"
+            "a"
+            "aa" "b" "bb" "c" "cc";
+    }
+}

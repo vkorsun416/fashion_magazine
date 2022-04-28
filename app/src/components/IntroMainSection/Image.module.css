@@ -1,0 +1,11 @@
+.imgRed {
+    width: 100%;
+    height: auto;
+    grid-area: aaa;
+}
+
+.imgGrey {
+    width: 100%;
+    height: auto;
+    grid-area: ccc;
+}

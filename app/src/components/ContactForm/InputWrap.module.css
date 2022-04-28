@@ -1,0 +1,28 @@
+.outer {
+    display: flex;
+    padding: 20px 180px 0;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.outer + .outer {
+    border-top: none;
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+}
+
+@media screen and (max-width: 730px) {
+    .outer {
+        padding: 26px 90px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .outer {
+        padding: 0 25px;
+    }
+}
+
